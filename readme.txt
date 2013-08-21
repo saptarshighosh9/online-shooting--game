@@ -1,7 +1,14 @@
 Download this few images and keep them in a folder called "images" 
-in a the same directory as .yaml file and .py file
+in a the same directory as app.yaml file and webgame.py file
 
-http://www.sendspace.com/filegroup/SB6FBaICWaNu7re3PBruMM3Hy3kR2iX1LEIU6stKcAI
+http://www.sendspace.com/filegroup/ZfTfMbxs62CT5VHtgRPV%2FmQb2aqQ19PDXrUR0UG0UWzvVtJE5o%2FFO6DbrxvbrFYx
+
+
+
+Download this few images and keep them in a folder called "images" 
+in a the same directory as app.yaml file and guestbook.py file and index.html
+
+http://www.sendspace.com/file/8a94ur
 
 
 Download the google app engine
@@ -29,5 +36,8 @@ give your google account credentials....
 after done..
 
 check :  your-app-id.appspot.com
+
+
+change the link urls in the html codes for proper working
 
 
