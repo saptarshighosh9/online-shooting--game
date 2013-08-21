@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+ 
+  <head>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+  </head>
+  <body>
+  
+  <div style="position: absolute; left: 0px; top:0px;">
+<img  src="http://imagesci.com/img/2013/12/abstract-blue-3090-hd-wallpapers.jpg" width=1365.2 height=662.7></a>
+</div>
+    <div style="position: absolute; left: 20px; top:20px;"> 
+    {% for greeting in greetings %}
+      {% if greeting.author %}
+        <b>{{ greeting.author.nickname() }}</b> wrote:
+      {% else %}
+       An anonymous person wrote:
+      {% endif %}
+      <blockquote>{{ greeting.content }}</blockquote>
+    {% endfor %}
+</div>
+    <form action="/sign?guestbook_name={{ guestbook_name }}" method="post">
+      <div style="position: absolute; left: 400px; top:15px;"><textarea name="content" rows="3" cols="60"></textarea></div>
+      <div style="position: absolute; left: 400px; top:70px;"><input type="submit" value="Sign Guestbook"></div>
+    </form>
+
+    <hr>
+
+    <form> <div style="position: absolute; left: 570px; top:75px;">Scorebook name:</div>
+       <div style="position: absolute; left:680px; top:70px;"><input value="{{ guestbook_name }}" name="guestbook_name"></div>
+       <div style="position: absolute;left: 850px; top:70px;"><input type="submit" value="switch"></div>
+    </form>
+<div style="position:absolute; color:#00FF000 ;left : 430px;top:90px;">
+<p style="font-size:24px"><strong>Login to let others see your comment.</strong></p>
+</div>
+<div style="position:absolute; color:#00FF000 ;left : 430px;top:120px;">
+<p style="font-size:21px"><strong>Click the G to log in(/log out) via your google account</strong></p>
+</div>  
+<div style="position:absolute; color:#00FF000 ;left : 430px;top:150px;">
+<p style="font-size:18px"><strong>Else comment as anonymous.</strong></p>
+</div>      
+ <div style="position: absolute; left: 530px; top:200px;">
+    <a href="{{ url|safe }}"><img  src="http://i10.photobucket.com/albums/a133/waitsman/Blog%20Icons/google-g-logo-neon-webtreatsetc.png" width=50 height=50></a>
+ </div>   
+<div style="position:absolute; color:#FF0000 ;left : 580px;top:210px;">
+<p style="font-size:16px"><strong> o</strong></p>
+</div>
+<div style="position:absolute; color:#FFFF00 ;left : 590px;top:210px;">
+<p style="font-size:16px"><strong> o<strong></p>
+</div>
+<div style="position:absolute; color:#0000FF ;left :600px;top:210px;">
+<p style="font-size:16px"> g</p>
+</div>
+<div style="position:absolute; color:#00FF00 ;left : 610px;top:210px;">
+<p style="font-size:16px"> l</p>
+</div>
+<div style="position:absolute; color:#FF0000 ;left : 620px;top:210px;">
+<p style="font-size:16px"> e</p>
+</div>
+ <div style="position: absolute; left: 640px; top:200px;">
+<img  src="http://www.puffweb.com/img/leftredarrow.gif" width=50 height=50></a>
+</div>
+<div style="position: absolute; left: 400px; top:320px;">
+<img  src="/images/game1.png" width=450 height=250></a>
+</div>
+<div style="position: absolute; left: 550px; top:460px;">
+<a href='http://wikandow.appspot.com/sign'>
+<img  src="http://th01.deviantart.net/fs70/PRE/f/2011/215/6/3/replay_button_by_ismolbil-d4332bk.png" width=150 height=150></a>
+</div>
+<div style="position: absolute; left: 580px; top:260px;">
+<a href='http://wikandow.appspot.com'>
+<img  src="http://jodhpur.nic.in/Home-icon.gif" width=50 height=50></a>
+</div>
+<div style="position: absolute; left: 590px; top:280px;">
+<p style="font-size:12px"> HOME </p>
+</div>
+  </body>
+</html>
+{% endautoescape %}
